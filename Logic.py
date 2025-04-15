@@ -1,16 +1,11 @@
 
-# ======================
-# Data Storage and Constants
-# ======================
 DATA_FILE = "studentrecords.txt"
 students = []
 recent_stack = []
 student_queue = []
 
 
-# ======================
-# Number System Conversion Functions
-# ======================
+
 def convert_number_system(number):
     """Convert a decimal number to binary, octal, and hexadecimal."""
     try:
@@ -44,9 +39,6 @@ def convert_to_binary(number):
         return None
 
 
-# ======================
-# Recursive Calculation Functions
-# ======================
 def factorial(number):
     """Calculate factorial recursively."""
     if number == 0:
@@ -61,9 +53,6 @@ def fibonacci(number):
     return fibonacci(number - 1) + fibonacci(number - 2)
 
 
-# ======================
-# Student Records Management Functions
-# ======================
 def load_students():
     """Load student records from file into the global students list."""
     global students
@@ -182,9 +171,7 @@ def sort_students():
     return students
 
 
-# ======================
-# Stack and Queue Functions
-# ======================
+
 def push_to_recent_stack(student):
     """Add a student to the recent stack (last 5 items only)."""
     recent_stack.append(student)
